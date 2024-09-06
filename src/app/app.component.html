@@ -1,0 +1,320 @@
+<head>
+  <title>ha</title>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <!--sidebar-->
+    <aside id="sidebar" class="js-sidebar">
+      <!-- Content For Sidebar -->
+      <div class="h-100">
+        <div class="sidebar-logo">
+          <a href="#">Golden Investemnt</a>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-header">
+            Admin Elements
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-solid fa-list pe-2"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse"
+              aria-expanded="false"><i class="fa-solid fa-file-lines pe-2"></i>
+              Pages
+            </a>
+            <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Page 1</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Page 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
+              aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
+              Posts
+            </a>
+            <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Post 1</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Post 2</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Post 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
+              aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+              Auth
+            </a>
+            <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Login</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Register</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Forgot Password</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-header">
+            Multi Level Menu
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed" data-bs-target="#multi" data-bs-toggle="collapse"
+              aria-expanded="false"><i class="fa-solid fa-share-nodes pe-2"></i>
+              Multi Dropdown
+            </a>
+            <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed" data-bs-target="#level-1" data-bs-toggle="collapse"
+                  aria-expanded="false">Level 1</a>
+                <ul id="level-1" class="sidebar-dropdown list-unstyled collapse">
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Level 1.1</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Level 1.2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- FIN DEL SIBERBAR-->
+
+    <div class="main-p-3"> <!-- MAIN-P-3 CONTENIDO PRINCIPAL -->
+      <nav class="navbar navbar-expand px-3 border-bottom">
+        <button class="btn" id="sidebar-toggle" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="w-100"> <!-- <EL BUSCADOR -->
+          <!-- Contenido colapsable de la barra de navegación -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Contenedor para alinear los elementos a la izquierda -->
+            <div class="container-fluid d-flex justify-content-start align-items-center">
+              <!-- Formulario de búsqueda alineado a la izquierda -->
+              <form class="position-relative d-flex align-items-center me-3" role="search">
+                <div class="input-group">
+                  <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                  <span class="input-group-text"><i class="icon ion-md-search"></i></span>
+                </div>
+              </form>
+
+              <!-- Elementos de navegación -->
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Angie</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+
+                <!-- Selector de tema -->
+                <li class="nav-item dropdown">
+                  <button
+                    class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center theme-toggle"
+                    id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                    data-bs-display="static">
+                    <svg class="bi my-1 theme-icon-active" width="16" height="16" fill="currentColor"></svg>
+                    <i class="fa-solid fa-sun"></i> 
+                    <span class="d-lg-none ms-2">theme</span>
+                    </button>
+
+
+                  <ul class="dropdown-menu dropdown-menu-end px-1" aria-labelledby="bd-theme"><li>
+                      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                        <!-- Este es el Light -->
+                        <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor"></svg>
+                        <i class="fa-regular fa-lightbulb"></i> 
+                        Light
+                      </button>
+                      <!-- PARA DARK -->
+                      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                        <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor"></svg>
+                        <i class="fa-solid fa-moon"></i> 
+                        Dark
+                      </button>
+
+                      <!-- PARA AUTO  -->
+                      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                        <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor"></svg>
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                        Auto
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!--oTRA navegación -->
+
+      <ul class="nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+       
+      </ul>
+
+
+      <main class="content px-3 py-2">
+        <div class="main-p-3"> <!-- MAIN-P-3 CONTENIDO PRINCIPAL -->
+          
+          <app-chart-ejemplo></app-chart-ejemplo>
+
+  
+
+
+
+          <!-- Table Element -->
+
+
+          <div class="custom-container border-0">
+            <div class="custom-header">
+              <h5 class="custom-title">
+                Basic Table
+              </h5>
+              <h6 class="custom-subtitle text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus,
+                necessitatibus reprehenderit itaque!
+              </h6>
+            </div>
+            <div class="custom-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th><!-- estos son de los cuadros de arriba -->
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- fin de la Table Element -->
+
+          <!-- Footer -->
+          <footer class="pt-5 pb-4">
+            <div class="container text-center text-md-left">
+              <div class="row text-center text-md-left">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-info">About Us</h5>
+                  <hr class="mb-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et
+                    dolore magna aliqua. Ut enim minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-info">Let Us Help</h5>
+                  <hr class="mb-4">
+                  <p><a href="#" class="text-dark" style="text-decoration:none">Your Account</a></p>
+                  <p><a href="#" class="text-dark" style="text-decoration:none">Your Orders</a></p>
+                  <p><a href="#" class="text-dark" style="text-decoration:none">Manage Your Content And Devices</a></p>
+                  <p><a href="#" class="text-dark" style="text-decoration:none">Help</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-info">About Us</h5>
+                  <hr class="mb-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et
+                    dolore magna aliqua. Ut enim minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.</p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+                  <hr class="mb-4">
+                  <p><i class="fas fa-home mr-3"></i>Lima, Peru 2024</p>
+                  <p><i class="fas fa-envelope mr-3"></i>aticllacuriGoldenpalace&#64;gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i>+51 222 222 25</p>
+                  <p><i class="fas fa-print mr-3"></i>+51 111 1111</p>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="row d-flex justify-content-center">
+                  <p>&copy; 2024 Todos los Derechos Reservados: <a href="#" style="text-decoration: none;"><strong
+                        class="text-info">The Providers</strong></a></p>
+                </div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <div class="text-center">
+                  <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                      <a href="#" class="text-dark"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-dark"><i class="fab fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </footer>

@@ -1,0 +1,72 @@
+
+<!-- chart-ejemplo.component.html -->
+
+
+
+<main class="content px-3 py-2">
+  <div class="main-p-3">
+<div class="row row-custom">
+  <!-- Información de Casino -->
+  <div class="column">
+    <div class="custom-card casino-card">
+      <div class="card-body">
+        <div class="card-content">
+          <h4 class="card-title">Datos de Casino</h4>
+          <p class="card-text">
+            <strong>Fecha:</strong> {{ casinoData.date }}
+          </p>
+          <p class="card-text">
+            <strong>Hora:</strong> {{ casinoData.time }}
+          </p>
+          <p class="card-text">
+            <strong>Valor:</strong> {{ casinoData.value }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Información de TGM -->
+  <div class="column">
+    <div class="custom-card tgm-card">
+      <div class="card-body">
+        <div class="card-content">
+          <h4 class="card-title">Datos de TGM</h4>
+          <p class="card-text">
+            <strong>Fecha:</strong> {{ tgmData.date }}
+          </p>
+          <p class="card-text">
+            <strong>Hora:</strong> {{ tgmData.time }}
+          </p>
+          <p class="card-text">
+            <strong>Total:</strong> {{ tgmData.value }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div class="chart-wrapper">
+  <div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [stroke]="chartOptions.stroke"
+      [tooltip]="chartOptions.tooltip"
+      [dataLabels]="chartOptions.dataLabels"
+      [legend]="chartOptions.legend"
+      [markers]="chartOptions.markers"
+      [grid]="chartOptions.grid"
+      [yaxis]="chartOptions.yaxis"
+      [title]="chartOptions.title"
+    ></apx-chart>
+    <!-- <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNTczOTVkNjctMWQ1MC00NmJkLThjZjktNTk4ZjIwNjNhY2U2IiwidCI6IjAyNDQ5ZmFhLTE4YWQtNDVmNi1hZDU5LTJlOTE5MDQyMTg0OSJ9"></iframe> -->
+  </div>
+</div>
